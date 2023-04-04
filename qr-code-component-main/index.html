@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      :root {
+        --Grayish-blue: hsl(220, 15%, 55%);
+        --Light-gray: hsl(212, 45%, 89%);
+        --Dark-blue: hsl(218, 44%, 22%);
+        --radius: 10px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body {
+        background-color: var(--Light-gray);
+        font-family: "Outfit", sans-serif;
+        font-size: 15px;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card-qr {
+        background-color: #fff;
+        width: 15vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        border-radius: var(--radius);
+      }
+
+      .card-qr-title {
+        font-weight: 700;
+        font-size: 17px;
+        text-align: center;
+        width: 90%;
+      }
+
+      .card-qr-subtitle {
+        font-weight: 400;
+        text-align: center;
+        color: var(--Grayish-blue);
+        width: 90%;
+      }
+
+      .image-qr {
+        width: 100%;
+        border-radius: var(--radius);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-qr">
+        <img src="images/image-qr-code.png" alt="" class="image-qr" />
+        <div>
+          <p class="card-qr-title">
+            Improve your front-end skills by building projects
+          </p>
+          <p class="card-qr-subtitle">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Paulo Neves</a>.
+      </div>
+    </div>
+  </body>
+</html>
